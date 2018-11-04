@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ru">
+   <head>
+      <meta charset="UTF-8">
+      <link rel="shortcut icon" href="img/logo.ico" type="img/ico">
+      <link rel="stylesheet" href="css/font-awesome.css" type="text/css">
+      <link rel="stylesheet" href="css/style.css" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
+      <title>Средства диагностики, контроля и мониторинга системы</title>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+      <script>
+         $(function() {
+         $(window).scroll(function() {
+         if($(this).scrollTop() != 0) {
+         $('#toTop').fadeIn();
+         } else {
+         $('#toTop').fadeOut();
+         }
+         });
+         $('#toTop').click(function() {
+         $('body,html').animate({scrollTop:0},800);
+         });
+         });
+      </script>
+   </head>
+   <body>
+      <header>
+         <nav class="dws-menu">
+            <ul>
+               <li><a href="index.html"><i class="fa fa-home"></i>Главная</a></li>
+               <li><a href="OS_selection.html"><i class="fa fa-windows"></i>Выбор ОС</a></li>
+               <li><a href="FS.html"><i class="fa fa-sitemap"></i>Выбор ФС</a></li>
+               <li><a href="Virtual_disks.html"><i class="fa fa-hdd-o"></i>Средства создания виртуальных дисков</a></li>
+               <li>
+                  <a href="Registry.html"><i class="fa fa-folder-open"></i>Средства работы с реестром</a>
+                  <ul>
+                     <li><a href="http://www.trashreg.com/index.html">• Registry Trash Keys Finder 3.9.4 RU</a></li>
+                     <li><a href="http://www.tweaknow.com/RegCleaner.php">• TweakNow RegCleaner 7.3.6</a></li>
+                     <li><a href="http://vitsoft.net/">• Vit Registry Fix Free Edition 9.5.9</a></li>
+                  </ul>
+               </li>
+               <li class="active">
+                  <a href="Diagnostic_monitoring.html"><i class="fa fa-thermometer-three-quarters"></i>Средства диагностики, контроля и мониторинга системы</a>
+                  <ul>
+                     <li><a href="SpeedFan.html">• SpeedFan 4.52</a></li>
+                     <li><a href="HWMonitor.html">• HWMonitor Portable 1.32</a></li>
+                     <li><a href="CPU-Z.html">• CPU-Z 1.80.2</a></li>
+                  </ul>
+               </li>
+               <li><a href="Literature.html"><i class="fa fa-book" aria-hidden="true"></i>Литература</a></li>
+            </ul>
+         </nav>
+      </header>
+      <table class="center">
+         <tr>
+            <td>
+               <h1>Средства диагностики, контроля и мониторинга системы</h1>
+               <p class="gh">Программы для диагностики или тестирования производительности компьютера позволяют измерить общую производительность вашего компьютера, либо отдельных его составляющих, например, видеокарты, оперативной памяти, жесткого диска и процессора. Диагностика и тестирование помогут не только определить характеристики компьютера, но найти возможные проблемы. Также многие такие программы оснащены функцией постоянного мониторинга за критическими параметрами "железа", такими как температура.</p>
+               <p class="gh">Диагностика и мониторинг осуществляется для предоставления информации об операционной системе и запущенных процессах, настройки ее параметров, а также повышения производительности системы и аппаратной составляющей компьютера.</p>
+               <p class="gh">В дальнейшем мной будут рассмотрены три программы реализующие функции диагностики, контроля и мониторинга системы.</p>
+               <table class="center">
+                  <tr>
+                     <td class="center20"><a HREF="SpeedFan.html"><img src="img/SpeedFan.png" alt="Программа «SpeedFan»" width="200"></a></td>
+                     <td class="center20"><a HREF="HWMonitor.html"><img src="img/HWMonitor_Portable.png" alt="Программа «HWMonitor»" width="200"></a></td>
+                     <td class="center20"><a HREF="CPU-Z.html"><img src="img/CPU-Z.png" alt="Программа «CPU-Z»" width="200"></a></td>
+                  </tr>
+                  <tr>
+                     <td class="center"><a HREF="SpeedFan.html" class="outS">SpeedFan 4.52</a></td>
+                     <td class="center"><a HREF="HWMonitor.html" class="outS1">HWMonitor Portable 1.32</a></td>
+                     <td class="center"><a HREF="CPU-Z.html" class="outS2">CPU-Z 1.80.2</a></td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table>
+      <div id = "toTop" ><i class="fa fa-chevron-up" aria-hidden="true"></i></div>
+   </body>
+</html>

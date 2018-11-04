@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ru">
+   <head>
+      <meta charset="UTF-8">
+      <link rel="shortcut icon" href="img/logo.ico" type="img/ico">
+      <link rel="stylesheet" href="css/font-awesome.css" type="text/css">
+      <link rel="stylesheet" href="css/style.css" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
+      <title>Средства работы с реестром</title>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+      <script>
+         $(function() {
+         $(window).scroll(function() {
+         if($(this).scrollTop() != 0) {
+         $('#toTop').fadeIn();
+         } else {
+         $('#toTop').fadeOut();
+         }
+         });
+         $('#toTop').click(function() {
+         $('body,html').animate({scrollTop:0},800);
+         });
+         });
+      </script>
+   </head>
+   <body>
+      <header>
+         <nav class="dws-menu">
+            <ul>
+               <li><a href="index.html"><i class="fa fa-home"></i>Главная</a></li>
+               <li><a href="OS_selection.html"><i class="fa fa-windows"></i>Выбор ОС</a></li>
+               <li><a href="FS.html"><i class="fa fa-sitemap"></i>Выбор ФС</a></li>
+               <li><a href="Virtual_disks.html"><i class="fa fa-hdd-o"></i>Средства создания виртуальных дисков</a></li>
+               <li>
+                  <a href="Registry.html"><i class="fa fa-folder-open"></i>Средства работы с реестром</a>
+                  <ul>
+                     <li><a href="http://www.trashreg.com/index.html">• Registry Trash Keys Finder 3.9.4 RU</a></li>
+                     <li><a href="http://www.tweaknow.com/RegCleaner.php">• TweakNow RegCleaner 7.3.6</a></li>
+                     <li><a href="http://vitsoft.net/">• Vit Registry Fix Free Edition 9.5.9</a></li>
+                  </ul>
+               </li>
+               <li class="active">
+                  <a href="Diagnostic_monitoring.html"><i class="fa fa-thermometer-three-quarters"></i>Средства диагностики, контроля и мониторинга системы</a>
+                  <ul>
+                     <li><a href="SpeedFan.html">• SpeedFan 4.52</a></li>
+                     <li><a href="HWMonitor.html">• HWMonitor Portable 1.32</a></li>
+                     <li><a href="CPU-Z.html">• CPU-Z 1.80.2</a></li>
+                  </ul>
+               </li>
+               <li><a href="Literature.html"><i class="fa fa-book" aria-hidden="true"></i>Литература</a></li>
+            </ul>
+         </nav>
+      </header>
+      <table class="center">
+         <tr>
+            <td>
+               <div class="outv1">
+                  <h1><i class="fa fa-bolt" aria-hidden="true"></i> HWMonitor Portable 1.32</h1>
+               </div>
+               <p class="gh"><b>HWMonitor </b>– это программа для мониторинга показателей различных компонентов компьютера. Сюда относится температура, скорость вращения вентиляторов, а также напряжение на различных устройствах. HWMonitor поддерживает мониторинг наиболее распространенных чипов: серии ITE IT87, Winbond ICs и другие.</p>
+               <p class="gh">Кроме того, программа умеет считывать информацию с процессорных датчиков, сенсоров блоков питания abit uGuru и Gigabyte ODIN, показывает температуру жесткого диска через S.M.A.R.T и температуру видеокарт на базе GPU производства ATI и nVIDIA.</p>
+               <p class="gh1">После установки и запуска программы открывается главное окно</p>
+               <p class="gh"><img src="img/HWMonitor1.png" alt="Скриншот «HWMonitor1.png»"></p>
+               <p class="gh1">После нажатия на «+» мы увидим все компоненты компьютера, по которым мы можем узнать какие-либо показатели. На следующем скриншоте можно увидеть, что доступна информация процессора, жесткого диска, видеокарты и аккумулятора.</p>
+               <p class="gh"><img src="img/HWMonitor2.png" alt="Скриншот «HWMonitor2.png»"></p>
+               <p class="gh1">После открытия доступных пунктов можно увидеть все показатели, которые доступны по каждому конкретному устройству. Их можно видеть на следующем скриншоте.</p>
+               <p class="gh"><img src="img/HWMonitor3.png" alt="Скриншот «HWMonitor3.png»"></p>
+               <p class="gh1">Далее более подробно рассмотрим температуру комплектующих компьютера</p>
+               <p class="gh"><img src="img/HWMonitor4.png" alt="Скриншот «HWMonitor4.png»"></p>
+               <p class="gh">Как видно на скриншоте выше на данный момент два ядра процессора имеют одинаковую температуру равную 52 градусам по Цельсию. Но их максимальная температура различна, как и минимальная за учетный период. Жесткий диск имеет температуру, которая почти не менялась в течении времени и равнялась 34 градусам. Видеокарта на данный момент имеет минимальную температуры за время учета равную 47 градусам, а максимальной была температура 53 градуса.</p>
+               <p class="gh1">На следующем скриншоте рассмотрим процент использования конкретного оборудования.</p>
+               <p class="gh"><img src="img/HWMonitor5.png" alt="Скриншот «HWMonitor5.png»"></p>
+               <p class="gh">Как видно выше, процессор в целом нагружен на 7 %, а т.к. процессор работает в четыре потока информация доступна о каждом отдельно. Например, первый нагружен на 4%, второй на 12%, третий на 6%, а четвертый всего на 1%. Жесткий диск нагружен на 64% в целом постоянно. Видеокарта на данный момент вообще не нагружена. </p>
+               <p class="gh1">Для ноутбуков очень полезной будет информация о состоянии батареи.<i class="fa fa-battery-half" aria-hidden="true"></i></p>
+               <p class="gh1">Она выглядит следующим образом:</p>
+               <p class="gh"><img src="img/HWMonitor6.png" alt="Скриншот «HWMonitor6.png»"></p>
+               <p class="gh">Тут можно узнать, как вольтаж батареи, так и её ёмкость. И наиболее интересная информация – это процент износа батареи. Программа на данном ноутбуке показывает, что батарея израсходована примерно на 50%.</p>
+               <p class="gh1">CPUID Hardware Monitor в целом предоставляет следующую информацию</p>
+               <p class="gh"><img src="img/HWMonitor7.png" alt="Скриншот «HWMonitor7.png»"></p>
+               <p class="gh0">Особенности установки:</p>
+               <ul  class="ghl">
+                  <li>CPUID Monitor устанавливается и работает на любой версии операционной системы Windows</li>
+                  <li>Программа HWMonitor поддерживает русский язык.</li>
+                  <li>Имеется портативная версия</li>
+               </ul>
+               <p class="gh0">Особенности программы</p>
+               <p class="gh">HWMonitor имеет официальный сайт, скачать программу на нём можно бесплатно. Находится сайт по адресу <a href="https://www.cpuid.com/">www.cpuid.com</a>. Программа собирает информацию со всех датчиков, находящихся в компьютере и выводит её на экран в одном окне. Программа отображает всю информацию в реальном времени и постоянно её обновляет. Вся информация в окне разбита по аппаратным устройствам компьютера материнская плата, процессор, жёсткий диск, видеокарта, батарея и так далее. Показывает программа CPUID температуру, напряжение, питание, частоты, загруженность, обороты вентилятора.</p>
+               <p class="gh0">Дополнительные функции</p>
+               <p class="gh1"><i class="fa fa-floppy-o" aria-hidden="true"></i> Сохранение собранной информации в текстовом документе</p>
+               <p class="gh">Собранные программой HWMonitor показатели можно сохранить в текстовом файле, для этого нужно нажать Файл (File) и выбрать Сохранить данные  мониторинга (Save Monitoring data).</p>
+               <p class="gh"><img src="img/HWMonitor8.png" alt="Скриншот «HWMonitor8.png»"></p>
+               <p class="gh1"><i class="fa fa-trash-o" aria-hidden="true"></i> Очистка сохраненной статистики<i class="fa fa-bar-chart" aria-hidden="true"></i></p>
+               <p class="gh">Можно обнулить минимальные и максимальные значения показателей для этого нужно нажать Вид и выбрать Очистить значения.</p>
+               <p class="gh"><img src="img/HWMonitor9.png" alt="Скриншот «HWMonitor9.png»"></p>
+               <p class="gh"><b>Вывод:</b> данная программа очень удобна для диагностики и контроля состояния компонентов компьютера. Большим плюсом является бесплатность программы и наличие русского языка.</p>
+               <p></p>
+               <hr>
+               <p></p>
+               <p class="gh">НИУ МГСУ, 2018 Мещеряков Александр Геннадьевич ИЭУИС 4-1</p>
+               <p></p>
+            </td>
+         </tr>
+      </table>
+      <div id = "toTop" ><i class="fa fa-chevron-up" aria-hidden="true"></i></div>
+   </body>
+</html>

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ru">
+   <head>
+      <meta charset="UTF-8">
+      <link rel="shortcut icon" href="img/logo.ico" type="img/ico">
+      <link rel="stylesheet" href="css/font-awesome.css" type="text/css">
+      <link rel="stylesheet" href="css/style.css" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
+      <title>Средства работы с реестром</title>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+      <script>
+         $(function() {
+         $(window).scroll(function() {
+         if($(this).scrollTop() != 0) {
+         $('#toTop').fadeIn();
+         } else {
+         $('#toTop').fadeOut();
+         }
+         });
+         $('#toTop').click(function() {
+         $('body,html').animate({scrollTop:0},800);
+         });
+         });
+      </script>
+   </head>
+   <body>
+      <header>
+         <nav class="dws-menu">
+            <ul>
+               <li><a href="index.html"><i class="fa fa-home"></i>Главная</a></li>
+               <li><a href="OS_selection.html"><i class="fa fa-windows"></i>Выбор ОС</a></li>
+               <li><a href="FS.html"><i class="fa fa-sitemap"></i>Выбор ФС</a></li>
+               <li><a href="Virtual_disks.html"><i class="fa fa-hdd-o"></i>Средства создания виртуальных дисков</a></li>
+               <li>
+                  <a href="Registry.html"><i class="fa fa-folder-open"></i>Средства работы с реестром</a>
+                  <ul>
+                     <li><a href="http://www.trashreg.com/index.html">• Registry Trash Keys Finder 3.9.4 RU</a></li>
+                     <li><a href="http://www.tweaknow.com/RegCleaner.php">• TweakNow RegCleaner 7.3.6</a></li>
+                     <li><a href="http://vitsoft.net/">• Vit Registry Fix Free Edition 9.5.9</a></li>
+                  </ul>
+               </li>
+               <li class="active">
+                  <a href="Diagnostic_monitoring.html"><i class="fa fa-thermometer-three-quarters"></i>Средства диагностики, контроля и мониторинга системы</a>
+                  <ul>
+                     <li><a href="SpeedFan.html">• SpeedFan 4.52</a></li>
+                     <li><a href="HWMonitor.html">• HWMonitor Portable 1.32</a></li>
+                     <li><a href="CPU-Z.html">• CPU-Z 1.80.2</a></li>
+                  </ul>
+               </li>
+               <li><a href="Literature.html"><i class="fa fa-book" aria-hidden="true"></i>Литература</a></li>
+            </ul>
+         </nav>
+      </header>
+      <table class="center">
+         <tr>
+            <td>
+               <div class="outv2">
+                  <h1><i class="fa fa-microchip" aria-hidden="true"></i> CPU-Z 1.80.2</h1>
+               </div>
+               <p class="gh"><b>CPU-Z </b>– это бесплатная утилита отображающая техническую информацию о компьютере, в основном о процессоре.</p>
+               <p class="gh0">Детально рассмотрим все её возможности</p>
+               <p class="gh1">Первая вкладка «CPU» отображает информацию о процессоре</p>
+               <p class="gh"><img src="img/CPU-Z1.png" alt="Вкладка «CPU»"></p>
+               <p class="gh">На данной вкладке можно увидеть Наименование процессора, наименование ядра, максимальный объем теплоотдачи, измеряемый в ватах. Тип разъёма (Socket). Техпроцесс процессора, напряжение питания процессора. Семейство, модель. В нижней части содержится наиболее полезная информация. Это, текущая частота процессора, в моем случае это 2792,58 MHz, ниже показан множитель и опорная частота шины. В правой части окна показана информация о кэш памяти процессора на трех уровнях. В самом низу показано количество ядер процессора и количество потоков, т.е. В моем случае 2 физических ядра и два виртуальных, дающих в сумме 4 потока. </p>
+               <p class="gh1">На второй вкладке, а именно вкладке «Caches» более подробно показана информация о кэш памяти</p>
+               <p class="gh"><img src="img/CPU-Z2.png" alt="Вкладка «Caches»"></p>
+               <p class="gh1">На третьей вкладке «Mainboard» содержится информация о материнской плате</p>
+               <p class="gh"><img src="img/CPU-Z3.png" alt="Вкладка «Mainboard»"></p>
+               <p class="gh">В верху указано наименование материнской платы, наименование чипсета, архитектура.В средней части окна содержится информация о версии BIOSа номер версии и дата выпуска.В самом низу информация о интерфейсе видеокарты в моем случае это PCI-Express.</p>
+               <p class="gh1">Четвертая вкладка «Memory» показывает информацию об оперативной памяти.</p>
+               <p class="gh"><img src="img/CPU-Z4.png" alt="Вкладка «Memory»"></p>
+               <p class="gh">А конкретно, тип, количество каналов. И более подробно: частота памяти, задержки, время циклов и д.р.</p>
+               <p class="gh1">Следующая вкладка «SPD» отображает информацию о рекомендованных настройках оперативной памяти, но зачастую они могут не отображаться.</p>
+               <p class="gh"><img src="img/CPU-Z5.png" alt="Вкладка «SPD»"></p>
+               <p class="gh1">Вкладка «Graphics» отображает информацию о видеокарте</p>
+               <p class="gh"><img src="img/CPU-Z6.png" alt="Вкладка «Graphics»"></p>
+               <p class="gh">В окне показано наименование видеочипа, процессор видеокарты, производитель и его логотип, частота, а также частота памяти и её объем.</p>
+               <p class="gh1">Предпоследняя вкладка «Bench»</p>
+               <p class="gh"><img src="img/CPU-Z7.png" alt="Вкладка «Bench»"></p>
+               <p class="gh">Стресс тест, для проверки стабильности работы процессора при его «разгоне».</p>
+               <p class="gh1">Последняя вкладка «About»</p>
+               <p class="gh"><img src="img/CPU-Z8.png" alt="Вкладка «About»"></p>
+               <p class="gh">Содержит информацию о программе, о версии, а также информация о текущей версии Windows, DirectX. Так же имеется ссылка на официальный сайт программы <a href="https://www.cpuid.com/">www.cpuid.com</a>, на котором можно скачать официальную версию программы. На сайте <a href="http://www.cpuz.ru/">www.cpuz.ru</a> можно скачать и русифицированную версию данной программы.</p>
+               <p class="gh">Вывод: эта программа показывает достаточно большое и полное количество технических характеристик вашего персонального компьютера. И хоть она и призвана отображать данные только о вашем центральном процессоре, но также ей можно воспользоваться для просмотра таких характеристик как оперативная память, материнская плата, графический адаптер.</p>
+               <p></p>
+               <hr>
+               <p></p>
+               <p class="gh">НИУ МГСУ, 2018 Мещеряков Александр Геннадьевич ИЭУИС 4-1</p>
+               <p></p>
+            </td>
+         </tr>
+      </table>
+      <div id = "toTop"><i class="fa fa-chevron-up" aria-hidden="true"></i></div>
+   </body>
+</html>
